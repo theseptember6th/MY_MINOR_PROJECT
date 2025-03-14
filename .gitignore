@@ -1,0 +1,40 @@
+# Ignore the model directory and any files inside it
+model/
+
+# Ignore specific large file like best.pt
+models/best.pt
+
+# Optionally ignore any other large files (e.g., .pt, .h5, .pkl)
+*.pt
+*.h5
+*.pkl
+
+# Ignore any other common large file extensions
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+
+# Ignore Python cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.cache
+
+# Ignore output directories
+*/output_videos/
+*/runs/
+
+# Ignore dataset directories
+*/datasets/
+
+# Ignore any temp/stub files
+*/stubs/
+
+# Ignore model directory that may contain large models
+*/model/
+
+# Ignore video files
+*.mp4
+*.avi
