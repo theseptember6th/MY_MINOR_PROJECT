@@ -18,7 +18,7 @@ For running the project,make sure you have created models folder and inside that
 - [Download best.pt](https://drive.google.com/file/d/1G_bwdCzZAhASvG71qBXzwIa2pw93h0nX/view?usp=drive_link)
 - Also make sure,you have this same file structure on your device to run without errors.
 - Also,for different input images make sure you change the name of the pickle file again and again.
-- ![Make sure](./assets/image.png)
+- ![Make sure](makesure.png)
 ## Project Structure
 ```
 SoccerAnalysis/
