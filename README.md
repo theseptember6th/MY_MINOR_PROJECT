@@ -6,7 +6,7 @@ This project analyzes soccer videos using a trained model. To run the project, m
 ## Installation
 
 ### Prerequisites
-- Python 3.x
+- Python 3.8.5(which i had used) or higher
 - Required libraries (see `requirements.txt`)
 
 ### Setting Up
