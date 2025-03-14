@@ -1,4 +1,4 @@
-#Description
+## Description
 Hi there! This is my minor project, **Project Soccer Analysis**. In this project, I have pre-trained a **YOLOv5 model** on my custom dataset to analyze soccer matches. By utilizing this model along with various computer vision techniques, the project can process prerecorded soccer match videos and extract crucial metrics.
 
 ## Overview
