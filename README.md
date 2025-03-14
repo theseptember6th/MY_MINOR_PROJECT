@@ -1,4 +1,5 @@
-#Hi there! This is my minor project, **Project Soccer Analysis**. In this project, I have pre-trained a **YOLOv5 model** on my custom dataset to analyze soccer matches. By utilizing this model along with various computer vision techniques, the project can process prerecorded soccer match videos and extract crucial metrics.
+#Description
+Hi there! This is my minor project, **Project Soccer Analysis**. In this project, I have pre-trained a **YOLOv5 model** on my custom dataset to analyze soccer matches. By utilizing this model along with various computer vision techniques, the project can process prerecorded soccer match videos and extract crucial metrics.
 
 ## Overview
 This project focuses on analyzing soccer matches using machine learning techniques. It employs YOLO for object detection, ByteTrack for player tracking, K-Means clustering for team assignment, and various computer vision techniques for ball possession estimation, speed calculation, and perspective transformation. The system is integrated with a Flask-based web application for easy interaction.
