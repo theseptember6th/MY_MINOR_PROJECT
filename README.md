@@ -1,4 +1,4 @@
-# Soccer Analysis Using Machine Learning
+#Hi there! This is my minor project, **Project Soccer Analysis**. In this project, I have pre-trained a **YOLOv5 model** on my custom dataset to analyze soccer matches. By utilizing this model along with various computer vision techniques, the project can process prerecorded soccer match videos and extract crucial metrics.
 
 ## Overview
 This project focuses on analyzing soccer matches using machine learning techniques. It employs YOLO for object detection, ByteTrack for player tracking, K-Means clustering for team assignment, and various computer vision techniques for ball possession estimation, speed calculation, and perspective transformation. The system is integrated with a Flask-based web application for easy interaction.
@@ -19,7 +19,7 @@ SoccerAnalysis/
 │-- app.py                         # Flask server for the web application
 │-- main1.py                       # Core processing script
 │-- models/
-│   └── best.pt                     # YOLOv8 model
+│   └── best.pt                     # YOLOv5 model
 │-- stubs/
 │   ├── track_stubs.pkl             # Stored player tracking data
 │   ├── camera_movement_stub.pkl    # Stored camera movement data
@@ -39,11 +39,8 @@ SoccerAnalysis/
 ```
 
 ## Installation & Setup
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/yourusername/SoccerAnalysis.git
-   cd SoccerAnalysis
-   ```
+1. **Clone/Download the Repository:**
+
 2. **Create a Virtual Environment:**
    ```sh
    python -m venv venv
@@ -58,11 +55,11 @@ SoccerAnalysis/
    ```sh
    python app.py
    ```
-5. **Upload a video through the web interface and process it.**
+5. **Upload a video of 30 sec or less beacause otherwise it will take a lot of time for processing through the web interface and process it.**
 
 ## Methodology
 ### **1. Object Detection (YOLOv8)**
-- The YOLOv8 model detects players, referees, and the ball in video frames.
+- The YOLOv5 model detects players, referees, and the ball in video frames.
 
 ### **2. Object Tracking (ByteTrack)**
 - Assigns unique track IDs to detected objects across multiple frames.
@@ -92,49 +89,14 @@ SoccerAnalysis/
 - **Event Detection**: Identify key moments like goals, fouls, and passes.
 - **3D Field Mapping**: Use depth estimation to enhance movement analysis.
 
-## Contributors
-- **[Your Name]** - Project Lead
-- **[Team Member 1]** - Web Development
-- **[Team Member 2]** - Machine Learning
-- **[Supervisor]** - Research Guidance
 
 ## References
-- [YOLO Object Detection](https://github.com/ultralytics/yolov8)
+- [YOLO Object Detection](https://github.com/ultralytics/yolov5)
 - [ByteTrack Multi-Object Tracking](https://github.com/ifzhang/ByteTrack)
 - [OpenCV for Computer Vision](https://opencv.org/)
 - [Flask Web Development](https://flask.palletsprojects.com/en/2.0.x/)
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-# SOCCER ANALYSIS
-## Description
 
-Hi there! This is my minor project, **Project Soccer Analysis**. In this project, I have pre-trained a **YOLOv5 model** on my custom dataset to analyze soccer matches. By utilizing this model along with various computer vision techniques, the project can process prerecorded soccer match videos and extract crucial metrics such as:
 
-- **Team Ball Possession**: Determines the percentage of time each team controls the ball during the game.
-- **Player Speed and Distance**: Tracks the movement of players, providing insights into their speed and the total distance covered.
-- - **Camera Movement Detection**: Identifies and compensates for camera movements, ensuring accurate tracking of players and game metrics regardless of changes in the camera’s position or angle.
-  
-The project uses the power of deep learning and computer vision to provide faster analysis, helping to extract actionable data from soccer games.
-To run the project, make sure you follow the steps below carefully.
-
-## Installation
-
-### Prerequisites
-- Python 3.8.5(which i had used) or higher
-- Required libraries (see `requirements.txt`)
-
-### Setting Up
-1. **Create a `models` folder**: In your project directory, create a folder called `models`. This is where the model file will be stored.
-
-2. **Download the Model**: You will need to download the pre-trained model `best.pt` by following the link below:
-   - [Download best.pt](<https://drive.google.com/file/d/1G_bwdCzZAhASvG71qBXzwIa2pw93h0nX/view?usp=sharing>)
-
-3. **Place the Model**: After downloading `best.pt`, move the file into the `models` folder you created.
-
-4. **Install Dependencies**:
-   Make sure all dependencies are installed by running:
-   ```bash
-   pip install -r requirements.txt
