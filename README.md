@@ -13,7 +13,12 @@ This project focuses on analyzing soccer matches using machine learning techniqu
 - **Perspective Transformation**: Converts detected positions to real-world coordinates.
 - **Speed & Distance Calculation**: Computes player movement speed and total distance covered.
 - **Web-Based Interface**: A Flask web application allows users to upload videos and view analyzed results.
-
+## For Running
+For running the project,make sure you have created models folder and inside that folder add the best.pt which is my custom pretrained YOLO model.Click this to download
+- [Download best.pt](https://drive.google.com/file/d/1G_bwdCzZAhASvG71qBXzwIa2pw93h0nX/view?usp=drive_link)
+- Also make sure,you have this same file structure on your device to run without errors.
+- Also,for different input images make sure you change the name of the pickle file again and again.
+- ![Make sure](./assets/image.png)
 ## Project Structure
 ```
 SoccerAnalysis/
